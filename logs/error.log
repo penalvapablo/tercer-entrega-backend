@@ -1,0 +1,31 @@
+{"level":"error","message":"eeee"}
+{"level":"error","message":"Error al crear producto. ValidationError: relatedProduct: Cast to ObjectId failed for value \"6203af7232cdbe3ecc1e\" (type string) at path \"relatedProduct\""}
+{"level":"error","message":"Error al registrar usuario. ReferenceError: hashedPassword is not defined"}
+{"level":"error","message":"Error al registrar usuario. TypeError: User.save is not a function"}
+{"level":"error","message":"Error al registrar usuario. TypeError: Cannot read property 'filename' of undefined"}
+{"level":"error","message":"Error al loguear usuario ReferenceError: Cannot access 'user' before initialization"}
+{"level":"error","message":"Error al registrar usuario. MongoServerError: E11000 duplicate key error collection: myFirstDatabase.users index: mail_1 dup key: { mail: \"a@a\" }"}
+{"level":"error","message":"Error al registrar usuario. MongoServerError: E11000 duplicate key error collection: myFirstDatabase.users index: mail_1 dup key: { mail: \"a@a\" }"}
+{"level":"error","message":"Error al registrar usuario. MongoServerError: E11000 duplicate key error collection: myFirstDatabase.users index: mail_1 dup key: { mail: \"a@a\" }"}
+{"level":"error","message":"Error al registrar usuario. MongoServerError: E11000 duplicate key error collection: myFirstDatabase.users index: mail_1 dup key: { mail: \"a@a\" }"}
+{"level":"error","message":"Error al registrar usuario. MongoServerError: E11000 duplicate key error collection: myFirstDatabase.users index: mail_1 dup key: { mail: \"a@a\" }"}
+{"level":"error","message":"Error al loguear usuario ReferenceError: Cannot access 'user' before initialization"}
+{"level":"error","message":"Error al registrar usuario. TypeError: Cannot read property 'filename' of undefined"}
+{"level":"error","message":"Error al registrar usuario. Error: data and salt arguments required"}
+{"level":"error","message":"Error al registrar usuario. Error: data and salt arguments required"}
+{"level":"error","message":"Error al registrar usuario. Error: data and salt arguments required"}
+{"level":"error","message":"Error al registrar usuario. Error: data and salt arguments required"}
+{"level":"error","message":"Error al registrar usuario. Error: data and salt arguments required"}
+{"level":"error","message":"Error al loguear usuario ReferenceError: Cannot access 'user' before initialization"}
+{"level":"error","message":"Error al loguear usuario ReferenceError: Cannot access 'user' before initialization"}
+{"level":"error","message":"Error al loguear usuario ReferenceError: userData is not defined"}
+{"level":"error","message":"Error al registrar usuario. TypeError: User.generateAuthToken is not a function"}
+{"level":"error","message":"Error al registrar usuario. ReferenceError: asd is not defined"}
+{"level":"error","message":"Error al loguear usuario Error: Unable to login"}
+{"level":"error","message":"Error al loguear usuario Error: Unable to login"}
+{"level":"error","message":"Error al loguear usuario Error: Unable to login"}
+{"level":"error","message":"Error al loguear usuario ReferenceError: res is not defined"}
+{"level":"error","message":"Error al loguear usuario Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client"}
+{"level":"error","message":"Error al loguear usuario Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client"}
+{"level":"error","message":"Error al loguear usuario Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client"}
+{"level":"error","message":"Error al loguear usuario Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client"}
