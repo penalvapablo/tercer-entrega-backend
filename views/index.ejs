@@ -12,10 +12,15 @@
       crossorigin="anonymous"
     />
   </head>
-  <script>
-    const token = document.cookie.split('=')[1]
-    console.log(token)
-  </script>
-    <h1>Hola</h1>
+
+  <body>
+    <div class="bienvenido">
+      <div>
+        <h1 class="fw-bold logged-message"><%= user.mail %></h1>
+      </div>
+      <a href="/logout"
+        ><button class="btn btn-primary desloguear">Desloguear</button></a
+      >
+    </div>
   </body>
 </html>

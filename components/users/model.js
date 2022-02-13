@@ -16,30 +16,8 @@ const userSchema = new mongoose.Schema({
   phone: { type: String, require: true, trim: true },
   birthDate: {type: Date, require: true}, 
   address: { type: String, require: true, trim: true },
-  photo: { type: String, require: true, trim: true },
-  tokens: [{
-    token: {
-        type: String,
-        required: true
-    }
-}]
+  photo: { type: String, require: true, trim: true }
 });
-
-
-
-// Statics son accesibles desde el model
-userSchema.statics.findByCredentials = async (mail, password) => {
-  const user = await User.findOne({ mail })
-  if (!user) {
-    return 'no-user'
-  }
-  const isMatch = await bcrypt.compare(password, user.password)
-  if (!isMatch) {
-    return 'no-pass'
-  }
-
-  return user
-}
 
 
 //Hash password before saving
@@ -49,6 +27,24 @@ userSchema.pre('save', async function (){
     user.password = await bcrypt.hash(user.password, 10);
   }
 })
+
+
+// Statics son accesibles desde el model
+// userSchema.statics.findByCredentials = async (mail, password) => {
+//   const user = await User.findOne({ mail })
+//   if (!user) {
+//     return 'no-user'
+//   }
+//   const isMatch = await bcrypt.compare(password, user.password)
+//   if (!isMatch) {
+//     return 'no-pass'
+//   }
+
+//   return user
+// }
+
+
+
 
 const User = mongoose.model('user', userSchema)
 
