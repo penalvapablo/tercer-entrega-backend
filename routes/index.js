@@ -1,17 +1,27 @@
 import carts from '../components/carts/routes.js';
 import products from '../components/products/routes.js';
 import users from '../components/users/routes.js';
-import { isAuth } from '../components/users/utils/Auth.js';
+import orders from '../components/orders/routes.js'
+import { isAuth } from '../utils/Auth.js';
+import Products from '../components/products/model.js'
+import logger from '../utils/winston.js'
 
 export default (app) => {
   products(app);
   carts(app);
+  app.use(users);
+  app.use(orders);
 
-  app.use('/', users);
-
-  app.get('/index', isAuth, (req, res) => {
+  app.get('/', isAuth, async(req, res) => {
     const user = req.user
-    res.render('index', { user });
+    try {
+      const products = await Products.find({});
+      res.render('index', { user, products })
+    } catch (error) {
+      logger.error(`Error al listar productos. ${error}`);
+    }
+
+
   });
 
   app.get('*', (req, res) =>

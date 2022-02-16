@@ -1,12 +1,15 @@
 import { Router } from 'express';
-import {getCartProducts} from './controller.js'
+import { isAuth } from '../../utils/Auth.js';
+import { getCartProducts, deleteProduct } from './controller.js';
 
 const cartRouter = new Router();
 
 export default (app) => {
   app.use('/cart', cartRouter);
 
-  cartRouter.get('/products/:id', getCartProducts);
+  cartRouter.get('/', isAuth, getCartProducts);
+
+  cartRouter.delete('/:id',isAuth, deleteProduct);
 
   // cartRouter.get('/list/:id', getProduct);
 

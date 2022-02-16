@@ -5,6 +5,7 @@ import {
   createProduct,
   updateProduct,
   deleteProduct,
+  addProductToCart
 } from './controller.js';
 
 const productsRouter = new Router();
@@ -15,6 +16,8 @@ export default (app) => {
   productsRouter.get('/list', getProducts);
 
   productsRouter.get('/list/:id', getProduct);
+
+  productsRouter.post('/list/:id', addProductToCart)
 
   productsRouter.post('/create', createProduct);
 

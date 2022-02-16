@@ -29,3 +29,160 @@
 {"level":"error","message":"Error al loguear usuario Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client"}
 {"level":"error","message":"Error al loguear usuario Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client"}
 {"level":"error","message":"Error al loguear usuario Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al registrar usuario. ValidationError: cart: Cast to Embedded failed for value \"[]\" (type Array) at path \"cart\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. ReferenceError: productId is not defined"}
+{"level":"error","message":"Error al agregar producto carrito. ReferenceError: productId is not defined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: req.cookie is not a function"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: req.cookies is not a function"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: req.cookies is not a function"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. ReferenceError: cookieParser is not defined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. ReferenceError: code is not defined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: Cannot read property 'split' of undefined"}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: req.cookies.split is not a function"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. ReferenceError: code is not defined"}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: user.cart.populate is not a function"}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. Error: Mongoose does not support calling populate() on nested docs. Instead of `doc.arr[0].populate(\"path\")`, use `doc.populate(\"arr.0.path\")`"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: productToAdd.save is not a function"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener carrito. ReferenceError: cartItems is not defined"}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener carrito. ReferenceError: _id is not defined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al borrar producto del carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al borrar producto del carrito. TypeError: undefined is not a function"}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al borrar producto del carrito. TypeError: id.split is not a function"}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al borrar producto del carrito. RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: { cart: [Array] }"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al generar pedido. ReferenceError: res is not defined"}
+{"level":"error","message":"Error al obtener carrito. TypeError: Cannot read property 'cart' of undefined"}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al generar pedido. ValidationError: products.0: Cast to [string] failed for value \"[\\n' +\n  \"  { product: 'productoUno', quantity: 2 },\\n\" +\n  \"  { product: 'productoDos', quantity: 3 }\\n\" +\n  ']\" (type string) at path \"products.0\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al generar pedido. TypeError: Assignment to constant variable."}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}

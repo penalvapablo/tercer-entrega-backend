@@ -1,26 +1,45 @@
 import logger from '../../utils/winston.js';
-import Cart from './model.js';
-import moment from 'moment';
+import Products from '../products/model.js';
 
 export async function getCartProducts(req, res) {
   try {
-    // Cuando tenga USER, usar esta
-    // const cartItems = await Cart.find({ user: req.user.id });
-
-    const cartItems = await Cart.findById(req.params.id);
-    return res.json(cartItems);
+    const user = req.user;
+    const userCart = await user.cart;
+    const cartArr = await Promise.all(
+      userCart.map(async (element) => {
+        return {
+          product: await Products.findById(element.product),
+          quantity: element.quantity,
+          id: element._id,
+        };
+      })
+    );
+    res.render('cart', { cartArr });
   } catch (error) {
     logger.error(`Error al obtener carrito. ${error}`);
     return res.status(500).json({ error_description: 'Error del servidor.' });
   }
 }
 
-// const newCart = await Cart.create({
-//   products: ["61bb4440fcc17ba8a80c3e7a", "61bb4440fcc17ba8a80c3e7c"],
-//   timestamp: moment(new Date()).format(
-//     'DD/MM/YY HH:mm'
-//   )
-// })
-// await newCart.populate('products')
+export async function deleteProduct(req, res) {
+  const user = req.user;
+  const itemInCart = req.params.id;
+  try {
+    const userCart = await user.cart;
 
-// console.log(newCart.products);
+    for (let index = 0; index < userCart.length; index++) {
+      let id = userCart[index]._id;
+      id = JSON.stringify(id);
+      id = id.slice(1);
+      id = id.slice(0, id.length - 1);
+      if (id === itemInCart) {
+        userCart.splice(index, 1);
+      }
+    }
+    await user.save();
+    res.redirect('/cart');
+  } catch (error) {
+    logger.error(`Error al borrar producto del carrito. ${error}`);
+    return res.status(500).json({ error_description: 'Error del servidor.' });
+  }
+}

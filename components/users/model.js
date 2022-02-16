@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
-const PRIVATE_KEY = process.env.PRIVATE_KEY
-console.log(PRIVATE_KEY)
-import logger from '../../utils/winston.js';
+import cartItemSchema from '../carts/model.js'
+
+
 
 const userSchema = new mongoose.Schema({
   mail: {
@@ -16,7 +16,8 @@ const userSchema = new mongoose.Schema({
   phone: { type: String, require: true, trim: true },
   birthDate: {type: Date, require: true}, 
   address: { type: String, require: true, trim: true },
-  photo: { type: String, require: true, trim: true }
+  photo: { type: String, require: true, trim: true },
+  cart:[ cartItemSchema]
 });
 
 
@@ -27,24 +28,6 @@ userSchema.pre('save', async function (){
     user.password = await bcrypt.hash(user.password, 10);
   }
 })
-
-
-// Statics son accesibles desde el model
-// userSchema.statics.findByCredentials = async (mail, password) => {
-//   const user = await User.findOne({ mail })
-//   if (!user) {
-//     return 'no-user'
-//   }
-//   const isMatch = await bcrypt.compare(password, user.password)
-//   if (!isMatch) {
-//     return 'no-pass'
-//   }
-
-//   return user
-// }
-
-
-
 
 const User = mongoose.model('user', userSchema)
 

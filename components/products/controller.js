@@ -1,7 +1,6 @@
 import logger from '../../utils/winston.js';
 import Products from './model.js';
 
-
 export async function getProducts(req, res) {
   try {
     const products = await Products.find({});
@@ -21,7 +20,8 @@ export async function getProduct(req, res) {
         .status(400)
         .json({ error_description: 'Producto no encontrado.' });
 
-    res.json({ product });
+    res.cookie('id', product._id)
+    res.render('product', { product });
   } catch (error) {
     logger.error(`Error al obtener producto. ${error}`);
     return res.status(500).json({ error_description: 'Error del servidor.' });
@@ -106,6 +106,24 @@ export async function deleteProduct(req, res) {
     res.json({ product });
   } catch (error) {
     logger.error(`Error al borrar producto. ${error}`);
+    return res.status(500).json({ error_description: 'Error del servidor.' });
+  }
+}
+
+export async function addProductToCart(req, res) {
+  try {
+    const productId = req.cookies.id
+    const { quantity } = req.body;
+    const user = req.user;
+    const productToAdd = {
+      product: productId,
+      quantity,
+    };
+    user.cart.push(productToAdd);
+    user.save()
+    res.redirect('/');
+  } catch (error) {
+    logger.error(`Error al agregar producto carrito. ${error}`);
     return res.status(500).json({ error_description: 'Error del servidor.' });
   }
 }

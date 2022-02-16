@@ -1,26 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-  </head>
+<%- include('./partials/header.ejs') %>
 
   <body>
     <div class="bienvenido">
       <div>
-        <h1 class="fw-bold logged-message"><%= user.mail %></h1>
+        <h1 class="fw-bold logged-message">Bienvenido <%= user.name %></h1>
       </div>
+      <a href="/cart"
+        ><button class="btn btn-primary desloguear">ver carrito</button></a
+      >
       <a href="/logout"
         ><button class="btn btn-primary desloguear">Desloguear</button></a
       >
+      <a href="/profile"
+      ><button class="btn btn-primary desloguear">Mi perfil</button></a
+    >
+    </div>
+    <div class="bg-dark text-light container">
+      <div class="row border-bottom">
+        <div class="col-4 p-4 fw-bold">Nombre</div>
+        <div class="col-4 p-4 fw-bold">Precio</div>
+        <div class="col-4 p-4 fw-bold">Foto</div>
+      </div>
+      <% products.forEach(function(product) { %>
+      <div class="row border-bottom">
+        <div class="col-4 p-4"><%= product.name %></div>
+        <div class="col-4 p-4"><%= product.price %></div>
+        <div class="col-4 p-4">
+          <img
+            width="50"
+            src="<%= product.img %>"
+            alt="not found"
+          />
+        </div>
+        <button
+            class="btn btn-success my-3"
+            onclick="location.href = 'products/list/<%= product.id %>'"
+          >
+         Ver producto
+        </button>
+      </div>
+      <% }) %>
     </div>
   </body>
 </html>
