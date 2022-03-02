@@ -14,11 +14,6 @@ import os from 'os';
 const numCPUs = os.cpus().length;
 import logger from './utils/winston.js';
 
-
-
-
-
-
 /**
  * -------------- GENERAL SETUP ----------------
  */
@@ -30,6 +25,26 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
+
+
+/**
+ * -------------- PRUEBAS ---------------------
+ */
+ import {Server} from 'socket.io'
+ import httpModule from 'http';
+ const http = httpModule.Server(app);
+ const io = new Server(http);
+
+
+
+
+
+
+
+
+
+
+ 
 /**
  * -------------- SESSION SETUP ----------------
  */

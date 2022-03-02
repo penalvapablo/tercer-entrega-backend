@@ -1,9 +1,9 @@
 import logger from '../../utils/winston.js';
-import Products from './model.js';
+import ProductsRepo from './repository.js';
 
 export async function getProducts(req, res) {
   try {
-    const products = await Products.find({});
+    const products = await ProductsRepo.getAll();
     res.json({ products });
   } catch (error) {
     logger.error(`Error al listar productos. ${error}`);
@@ -13,14 +13,15 @@ export async function getProducts(req, res) {
 
 export async function getProduct(req, res) {
   try {
-    const product = await Products.findById(req.params.id);
+    const id = req.params.id;
+    const product = await ProductsRepo.get(id);
 
     if (!product)
       return res
         .status(400)
         .json({ error_description: 'Producto no encontrado.' });
 
-    res.cookie('id', product._id)
+    res.cookie('id', product._id);
     res.render('product', { product });
   } catch (error) {
     logger.error(`Error al obtener producto. ${error}`);
@@ -30,28 +31,8 @@ export async function getProduct(req, res) {
 
 export async function createProduct(req, res) {
   try {
-    const { name, description, code, img, price, stock } = req.body;
-    if (
-      !(name?.length > 0) ||
-      !(description?.length > 0) ||
-      !(String(code)?.length > 0) ||
-      !(img?.length > 0) ||
-      !Number(price) ||
-      !Number(stock)
-    ) {
-      return res
-        .status(400)
-        .json({ error_description: 'Parámetros erroneos.' });
-    }
-
-    const newProduct = await Products.create({
-      name,
-      description,
-      code,
-      img,
-      price,
-      stock,
-    });
+    const product = req.body;
+    const newProduct = await ProductsRepo.create(product);
 
     return res.status(201).json({ product: newProduct });
   } catch (error) {
@@ -62,24 +43,9 @@ export async function createProduct(req, res) {
 
 export async function updateProduct(req, res) {
   try {
-    const { name, description, code, img, price, stock } = req.body;
-    if (
-      !(name?.length > 0) ||
-      !(description?.length > 0) ||
-      !(String(code)?.length > 0) ||
-      !(img?.length > 0) ||
-      !Number(price) ||
-      !Number(stock)
-    ) {
-      return res
-        .status(400)
-        .json({ error_description: 'Parametros erroneos.' });
-    }
-
+    const updatedProduct = req.body;
     const id = req.params.id;
-    const updatedProduct = { name, description, code, img, price, stock };
-
-    if (await Products.findByIdAndUpdate(id, updatedProduct)) {
+    if (await ProductsRepo.update(id, updatedProduct)) {
       const product = {
         _id: id,
         ...updatedProduct,
@@ -97,7 +63,7 @@ export async function updateProduct(req, res) {
 
 export async function deleteProduct(req, res) {
   try {
-    const product = await Products.findByIdAndDelete(req.params.id);
+    const product = await ProductsRepo.delete(req.params.id);
     if (!product) {
       return res
         .status(400)
@@ -112,15 +78,10 @@ export async function deleteProduct(req, res) {
 
 export async function addProductToCart(req, res) {
   try {
-    const productId = req.cookies.id
+    const productId = req.cookies.id;
     const { quantity } = req.body;
     const user = req.user;
-    const productToAdd = {
-      product: productId,
-      quantity,
-    };
-    user.cart.push(productToAdd);
-    user.save()
+    ProductsRepo.addProductToCart(productId, quantity, user);
     res.redirect('/');
   } catch (error) {
     logger.error(`Error al agregar producto carrito. ${error}`);

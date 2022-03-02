@@ -186,3 +186,14 @@
 {"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
 {"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
 {"level":"error","message":"Error al obtener producto. CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al listar productos. ReferenceError: productsForIndexDTO is not defined"}
+{"level":"error","message":"Error al listar productos. ReferenceError: productsForIndexDTO is not defined"}
+{"level":"error","message":"Error al crear producto. ObjectParameterError: Parameter \"obj\" to Document() must be an object, got xxx"}
+{"level":"error","message":"Error al listar productos. ReferenceError: productdao is not defined"}
+{"level":"error","message":"Error al crear producto. TypeError: productsDao.create is not a function"}
+{"level":"error","message":"Error al borrar producto. ReferenceError: id is not defined"}
+{"level":"error","message":"error al buscar producto en la db . CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"error al buscar producto en la db . CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"error al buscar producto en la db . CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"Error al agregar producto carrito. TypeError: Cannot read property 'id' of undefined"}
+{"level":"error","message":"error al buscar producto en la db . CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}

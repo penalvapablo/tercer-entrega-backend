@@ -4,6 +4,7 @@ import users from '../components/users/routes.js';
 import orders from '../components/orders/routes.js'
 import { isAuth } from '../utils/Auth.js';
 import Products from '../components/products/model.js'
+ import productsForIndexDTO from '../components/products/DTOs/productsForIndexDTO.js';
 import logger from '../utils/winston.js'
 
 export default (app) => {
@@ -16,7 +17,8 @@ export default (app) => {
     const user = req.user
     try {
       const products = await Products.find({});
-      res.render('index', { user, products })
+      const productsDTO = products.map(product => new productsForIndexDTO(product))
+      res.render('index', { user, productsDTO })
     } catch (error) {
       logger.error(`Error al listar productos. ${error}`);
     }
