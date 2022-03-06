@@ -32,13 +32,8 @@ app.set('views', __dirname + '/views');
  */
  import {Server} from 'socket.io'
  import httpModule from 'http';
- const http = httpModule.Server(app);
- const io = new Server(http);
-
-
-
-
-
+ const httpServer = httpModule.Server(app);
+ const io = new Server(httpServer);
 
 
 
@@ -89,7 +84,7 @@ routes(app);
 const mode = process.env.MODE;
 
 if (mode === 'FORK') {
-  const server = app.listen(PORT, () => {
+  const server = httpServer.listen(PORT, () => {
     logger.log('info', `Servidor inicializado en el puerto ${PORT}`);
   });
 
@@ -114,7 +109,7 @@ if (mode === 'CLUSTER') {
       cluster.fork();
     });
   } else {
-    const server = app.listen(PORT, () => {
+    const server = httpServer.listen(PORT, () => {
       logger.log(
         'info',
         `Servidor inicializado en el puerto ${server.address().port} con pid ${

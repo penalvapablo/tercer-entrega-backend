@@ -1,0 +1,17 @@
+> mocha ./test/mocha.test.js
+
+
+
+  test api productos
+    listar products
+      ✔ Debería retornar un status 200 (213ms)
+      ✔ Debería retornar un objeto como data
+    crear producto
+      ✔ Debería retornar un status 201 y crear un producto (182ms)
+    actualizar producto
+      ✔ Debería retornar un status 201 y modificar un producto (360ms)
+    borrar producto
+      ✔ Debería retornar un status 200 y borrar un producto (355ms)
+
+
+  5 passing (1s)

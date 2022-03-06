@@ -69,7 +69,7 @@ export async function deleteProduct(req, res) {
         .status(400)
         .json({ error_description: 'Producto no encontrado.' });
     }
-    res.json({ product });
+    res.status(200).json({ product });
   } catch (error) {
     logger.error(`Error al borrar producto. ${error}`);
     return res.status(500).json({ error_description: 'Error del servidor.' });

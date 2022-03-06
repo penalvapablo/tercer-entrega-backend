@@ -197,3 +197,5 @@
 {"level":"error","message":"error al buscar producto en la db . CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
 {"level":"error","message":"Error al agregar producto carrito. TypeError: Cannot read property 'id' of undefined"}
 {"level":"error","message":"error al buscar producto en la db . CastError: Cast to ObjectId failed for value \"asd\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"error al actualizar producto en la db. CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"products\""}
+{"level":"error","message":"error al actualizar producto en la db. CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"products\""}
